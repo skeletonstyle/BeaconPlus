@@ -1,0 +1,17 @@
+name: BeaconPlus
+version: '${version}'
+main: dev.beaconplus.BeaconPlus
+api-version: '26.3'
+description: Extra, config-defined potion effects for beacons.
+commands:
+  beaconplus:
+    description: BeaconPlus admin command
+    usage: /beaconplus <reload|list>
+    permission: beaconplus.admin
+permissions:
+  beaconplus.use:
+    description: Open the extra-effects menu on a beacon
+    default: true
+  beaconplus.admin:
+    description: Reload the config
+    default: op

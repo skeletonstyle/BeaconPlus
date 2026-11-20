@@ -1,0 +1,62 @@
+# BeaconPlus config. Edit, then run /beaconplus reload (no restart needed).
+
+# How many extra effects one beacon can have active at once.
+max-extra-effects: 1
+
+messages:
+  menu-title: "<dark_purple>Extra Beacon Effects"
+  max-reached: "<red>This beacon can only have <max> extra effect(s). Click one to turn it off first."
+  tier-too-low: "<red>This beacon pyramid is too small for that effect."
+
+# Add as many effects as you like. The section name (e.g. "night_vision") is just an
+# internal ID - don't rename it after players have picked it, or those beacons lose it.
+#
+#   effect:        any potion effect key: night_vision, minecraft:luck, or a modded/datapack key
+#   name:          text shown in the menu
+#   icon:          any Minecraft material name (https://jd.papermc.io/paper/26.3/org/bukkit/Material.html)
+#   amplifier:     0 = level I, 1 = level II, 2 = level III ...
+#   min-tier:      beacon pyramid size needed (1-4)
+#   duration-seconds: 0 = same length as the beacon's normal effect (recommended)
+effects:
+  night_vision:
+    effect: night_vision
+    name: "Night Vision"
+    icon: GOLDEN_CARROT
+    amplifier: 0
+    min-tier: 1
+    duration-seconds: 0
+  water_breathing:
+    effect: water_breathing
+    name: "Water Breathing"
+    icon: PUFFERFISH
+    amplifier: 0
+    min-tier: 2
+    duration-seconds: 0
+  fire_resistance:
+    effect: fire_resistance
+    name: "Fire Resistance"
+    icon: MAGMA_CREAM
+    amplifier: 0
+    min-tier: 2
+    duration-seconds: 0
+  luck:
+    effect: luck
+    name: "Luck"
+    icon: RABBIT_FOOT
+    amplifier: 0
+    min-tier: 3
+    duration-seconds: 0
+  slow_falling:
+    effect: slow_falling
+    name: "Slow Falling"
+    icon: FEATHER
+    amplifier: 0
+    min-tier: 3
+    duration-seconds: 0
+  health_boost:
+    effect: health_boost
+    name: "Health Boost"
+    icon: GLISTERING_MELON_SLICE
+    amplifier: 1
+    min-tier: 4
+    duration-seconds: 0
